@@ -1,4 +1,4 @@
-# Programmming Hero Paribahan
+# Paribahan
 
 Developing the Future of Transportation: Where Innovation Meets Mobility
 
