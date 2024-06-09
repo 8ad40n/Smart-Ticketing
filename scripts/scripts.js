@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let i = 0; i < seatButtons.length; i++) {
         seatButtons[i].addEventListener("click", toggleSeatSelection);
-        seatButtons[i].addEventListener("keyup", toggleSeatSelection);
+        seatButtons[i].addEventListener("keypress", toggleSeatSelection);
     }
 
     function toggleSeatSelection() {
