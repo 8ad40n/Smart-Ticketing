@@ -370,16 +370,16 @@
                     <!-- total price -->
                     <div class="inter text-base font-semibold flex justify-between">
                       <h1>Total Price</h1>
-                      <h1>BDT 0</h1>
+                      <h1>BDT <span class="total-price">0</span></h1>
                     </div>
                     <!-- coupon -->
-                    <form class="inter text-base font-normal flex justify-between my-6">
-                      <input type="text" placeholder="Have any copupon?" class="input input-bordered w-full " required/>
-                      <button class="btn text-white bg-primary text-base font-medium">Apply</button>
-                    </form>
+                    <div class="inter text-base font-normal flex justify-between my-6">
+                      <input type="text" placeholder="Have any copupon?" class="coupon input input-bordered w-full " required/>
+                      <button onclick="discount()" class="btn text-white bg-primary text-base font-medium">Apply</button>
+                    </div>
                     <div class="inter text-base font-semibold flex justify-between">
                       <h1>Grand Total</h1>
-                      <h1>BDT 0</h1>
+                      <h1>BDT <span class="grand-price">0</span></h1>
                     </div>
                   </div>
                   <!-- form -->

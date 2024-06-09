@@ -18,12 +18,27 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             count--;
         }
+        // selected seat
         document.querySelector(".selected-seat").innerText = count;
 
+        // total price
+        document.querySelector(".selected-seat").innerText = count;
+
+        // seat left
         const left = totalSeats - count;
         document.querySelector(".seatCount").innerText = left;
 
+        // seat info
         updateSeatInfo(getSelectedSeats());
+
+        // total price
+        const totalPrice= count*550;
+        document.querySelector(".total-price").innerText= totalPrice;
+
+        // Grand price
+        const grandPrice= count*550;
+        document.querySelector(".grand-price").innerText= grandPrice;
+
 
         console.log(`Number of selected seats: ${count}`);
         console.log(`Seats left: ${left}`);
@@ -57,4 +72,23 @@ document.addEventListener("DOMContentLoaded", () => {
             seatInfoContainer.appendChild(seatInfo);
         });
     }
+    
 });
+
+function discount() {
+    const coupon = document.querySelector(".coupon").value;
+    if (coupon === "NEW20") {
+        const totalElement = document.querySelector(".total-price");
+        const total = parseInt(totalElement.innerText);
+        const discountedTotal = total * 0.80; 
+        document.querySelector(".grand-price").innerText = discountedTotal;
+    }
+    else if(coupon === "NEW15")
+    {
+        const totalElement = document.querySelector(".total-price");
+        const total = parseInt(totalElement.innerText);
+        const discountedTotal = total * 0.85; 
+        document.querySelector(".grand-price").innerText = discountedTotal;
+    }
+}
+
