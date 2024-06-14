@@ -18,7 +18,7 @@
     
   </head>
   <body>
-    <header class="container mx-auto mb-[2.5rem] md:mb-[4.5rem] lg:mb-[6.25rem] px-2 md:px-15 lg:px-20">
+    <header id="home" class="container mx-auto mb-[2.5rem] md:mb-[4.5rem] lg:mb-[6.25rem] px-2 md:px-15 lg:px-20">
         <!-- navbar -->
         <!-- sticky top-0 left-0 right-0  -->
         <nav class="raleway lg:py-3">
@@ -29,26 +29,26 @@
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a class="font-medium text-base hover:bg-black hover:text-white">Home</a></li>
-                            <li><a class="font-medium text-base hover:bg-black hover:text-white">Offer</a></li>
-                            <li><a class="font-medium text-base hover:bg-black hover:text-white">Destination</a></li>
+                            <li><a href="#home" class="font-medium text-base hover:bg-black hover:text-white">Home</a></li>
+                            <li><a href="#offer" class="font-medium text-base hover:bg-black hover:text-white">Offer</a></li>
+                            <li><a href="#ticket" class="font-medium text-base hover:bg-black hover:text-white">Destination</a></li>
                             
                         </ul>
                       </div>
-                  <a class="btn btn-ghost text-xl lg:text-3xl font-extrabold">P-Ticket</a>
+                  <a href="#home" class="btn btn-ghost text-xl lg:text-3xl font-extrabold">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a class="font-medium text-base hover:bg-black hover:text-white">Home</a></li>
-                    <li><a class="font-medium text-base hover:bg-black hover:text-white">Offer</a></li>
-                    <li><a class="font-medium text-base hover:bg-black hover:text-white">Destination</a></li>
+                    <li><a href="#home" class="font-medium text-base hover:bg-black hover:text-white">Home</a></li>
+                    <li><a href="#offer" class="font-medium text-base hover:bg-black hover:text-white">Offer</a></li>
+                    <li><a href="#ticket" class="font-medium text-base hover:bg-black hover:text-white">Destination</a></li>
                   </ul>
                 </div>
                 <div class="navbar-end ">
                   <!-- theme -->
                   
                   <!-- ticket button -->
-                  <a class="btn flex border-solid border-1 border-primary hover:bg-black">
+                  <a href="#ticket" class="btn flex border-solid border-1 border-primary hover:bg-black">
                     <h1 class="text-primary">Bus</h1>
                     <img src="images/bus-icon.png" alt="">
                   </a>
@@ -103,7 +103,7 @@
 
     <main class="container mx-auto mb-[2.5rem] md:mb-[4.5rem] lg:mb-[6.25rem] px-2 md:px-15 lg:px-20">
         <!-- offer -->
-        <section class="mb-[2.5rem] md:mb-[4.5rem] lg:mb-[6.25rem]">
+        <section id="offer" class="mb-[2.5rem] md:mb-[4.5rem] lg:mb-[6.25rem]">
           <h1 class="raleway text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-10">Best offers for you</h1>
             <div class="raleway flex-col justify-between lg:flex lg:flex-row lg:justify-center lg:gap-16">
                 <div class="bg-[#FFBF0F] h-36 lg:w-1/2 flex rounded-3xl mb-4">
@@ -134,7 +134,7 @@
         </section>
 
         <!-- book ticket -->
-         <section class="mb-[2.5rem] md:mb-[4.5rem] lg:mb-[6.25rem]">
+         <section id="ticket" class="mb-[2.5rem] md:mb-[4.5rem] lg:mb-[6.25rem]">
           <div class="px-4 py-8 lg:px-10 lg:py-24 bg-[#F7F8F8] border-solid border-2 border-primary rounded-t-3xl">
             <!-- heading -->
              <div class="text-center mb-3 lg:mb-6 ">
@@ -383,7 +383,7 @@
                     </div>
                   </div>
                   <!-- form -->
-                  <form action="" class="inter">
+                  <form action="confirm.html" class="inter">
                     <div class="mb-6">
                       <label for="" class="text-base font-semibold ">Passenger Name*
                       </label>
